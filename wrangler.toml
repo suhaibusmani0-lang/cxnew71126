@@ -1,0 +1,17 @@
+# wrangler.toml
+name = "ecommerce"
+main = ".open-next/worker.js"
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "modules"
+dir = ".open-next"
+
+[vars]
+MONGODB_URI=mongodb+srv://support_db_user:pjOZEIPe0AhRB1TU@cosmopolitanxccessories.gswb8pb.mongodb.net/support_db?retryWrites=true&w=majority&appName=CosmopolitanXccessories
+
+JWT_SECRET=qoDdI6r7NMLgoMp5SSi0w64knbNEcmVHlxNn2FYvmU8=
